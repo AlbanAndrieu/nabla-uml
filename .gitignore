@@ -18,3 +18,8 @@ bower_components/
 /tmp/
 /scripts/bower/bower-*
 *.log
+sample/empty/nabla/
+sample/howtomodel/common/src/generated/
+sample/howtomodel/core/src/generated/
+sample/howtomodel/web/src/generated/
+sample/howtomodel/core/src/test/java/
