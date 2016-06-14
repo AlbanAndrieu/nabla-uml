@@ -440,6 +440,7 @@
         <sourceDirectory>src</sourceDirectory>
         <testSourceDirectory>src-test</testSourceDirectory -->
         <pluginManagement>
+			<plugins>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>build-helper-maven-plugin</artifactId>
