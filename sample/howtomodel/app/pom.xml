@@ -6,8 +6,8 @@
 		<artifactId>howtomodel</artifactId>
 		<version>1.0.1-SNAPSHOT</version>
 	</parent>
-	
-	<modelVersion>4.0.0</modelVersion>	
+
+	<modelVersion>4.0.0</modelVersion>
 	<artifactId>app</artifactId>
 	<packaging>ear</packaging>
 	<name>AndroMDA HowToModel Sample Application</name>
@@ -44,8 +44,8 @@
         <dependency>
             <groupId>org.jboss.seam</groupId>
             <artifactId>seam</artifactId>
-            <version>3.0.0.b01</version>  
-            -->      
+            <version>3.0.0.b01</version>
+            -->
             <!--
             <groupId>org.jboss.seam</groupId>
             <artifactId>jboss-seam</artifactId>
@@ -178,7 +178,7 @@
 				<configuration>
 					<skip>true</skip>
 				</configuration>
-			</plugin>				
+			</plugin>
 		</plugins>
 	</build>
 	<profiles>

@@ -167,7 +167,7 @@ public abstract class ${manageable.controllerName}
 #end
         //$member
         //$member.type
-        //$fieldType        
+        //$fieldType
         //$member.manageableIdentifier.type
         //${member.manageableIdentifier.getterName}
 #if($member.type.hasStereotype("Manageable"))
@@ -184,10 +184,10 @@ public abstract class ${manageable.controllerName}
         form.${member.setterName}(($fieldTypeMany) dataset.toArray());
 #else
         form.${member.setterName}(vo.${member.getterName}().${member.manageableIdentifier.getterName}());
-#end        
+#end
 #else
         form.${member.setterName}(vo.${member.getterName}());
-#end        
+#end
 #end
 
         form.setEditState(true);
@@ -677,7 +677,7 @@ public abstract class ${manageable.controllerName}
     {
         //final java.util.Collection<${manageable.valueObjectClassName}> vos;
         //final java.util.Collection<${valueObject.fullyQualifiedName}> vos;
-        final java.util.Collection<${manageable.fullyQualifiedName}> vos;   
+        final java.util.Collection<${manageable.fullyQualifiedName}> vos;
         try {
             //vos = (java.util.Collection<${manageable.valueObjectClassName}>)${manageable.manageableServiceAccessorCall}.readAll();
             vos = (java.util.Collection<${manageable.fullyQualifiedName}>)${manageable.manageableServiceAccessorCall}.readAll();

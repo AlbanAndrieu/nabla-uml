@@ -72,9 +72,9 @@
             <artifactId>hibernate-entitymanager</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.hibernate</groupId>        
+            <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
-        </dependency>		
+        </dependency>
         <!--dependency>
             <groupId>hibernate-entitymanager</groupId>
             <artifactId>ejb3-persistence</artifactId>
@@ -104,7 +104,7 @@
         <dependency>
                 <groupId>javax.validation</groupId>
                 <artifactId>validation-api</artifactId>
-        </dependency>                
+        </dependency>
         <dependency>
                 <groupId>jboss</groupId>
 		<artifactId>jboss-annotations-ejb3</artifactId>
@@ -167,7 +167,7 @@
             <version>1.0.0.Alpha9</version>
             <scope>test</scope>
         </dependency-->
-                
+
                 <!--
       		<dependency>
       		  <groupId>jboss.jbossws14</groupId>
@@ -175,8 +175,8 @@
       		  <version>1.0RC2</version>
       		</dependency>
       		-->
-      		
-      		<!--    
+
+      		<!--
 		<dependency>
 			<groupId>org.jboss.ws.native</groupId>
 			<artifactId>jbossws-native-client</artifactId>
@@ -200,7 +200,7 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 		</dependency>
-		<!--		
+		<!--
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -210,7 +210,7 @@
         	    <groupId>commons-io</groupId>
         	    <artifactId>commons-io</artifactId>
         	    <scope>test</scope>
-        	</dependency>		
+        	</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -230,8 +230,8 @@
 								<!--<source>${basedir}/src/generated/main/resources</source>-->
 							</sources>
 						</configuration>
-					</execution>				
-				</executions>				
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -262,7 +262,7 @@
 					<!-- Enable or disable Stop maven -->
 					<testFailureIgnore>${maven.test.failure.skip}</testFailureIgnore>
 				</configuration>
-			</plugin>							
+			</plugin>
 		</plugins>
 	</build>
 </project>

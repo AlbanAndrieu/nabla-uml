@@ -303,5 +303,3 @@
 
 
         -- The AndroMDA Team
-
-

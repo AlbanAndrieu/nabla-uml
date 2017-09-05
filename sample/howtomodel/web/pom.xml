@@ -232,7 +232,7 @@
         	        <targetPath>${project.basedir}/${target.dir}/src/main/webapp</targetPath>
         	        <filtering>false</filtering>
         	    </resource>
-        	</resources>		
+        	</resources>
 		<plugins>
 		        <!--
 			<plugin>

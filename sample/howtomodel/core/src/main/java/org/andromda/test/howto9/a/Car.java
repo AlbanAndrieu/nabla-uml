@@ -57,7 +57,7 @@ public class Car extends CarEmbeddable implements Serializable, Comparable<Car>
 
     /**
      * Constructor with all POJO attribute values and CMR relations.
-     * 
+     *
      * @param make Value for the make property
      * @param model Value for the model property
      * @param age Value for the age property

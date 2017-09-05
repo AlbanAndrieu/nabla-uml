@@ -12,7 +12,7 @@ public abstract class ControllerBase
 {
 
     private static final org.apache.commons.logging.Log logger = org.apache.commons.logging.LogFactory.getLog(ControllerBase.class);
-    
+
     public static final String USE_CASE_FORMS_KEY="org.andromda.cartridges.jsf.USE_CASE_FORMS";
     public static final String USE_CASE_PAGE_VARIABLES_KEY="org.andromda.cartridges.jsf.PAGE_VARIABLES";
     public static final String USE_CASE_PARAMETERS_KEY="org.andromda.cartridges.jsf.USE_CASE_PARAMETERS";

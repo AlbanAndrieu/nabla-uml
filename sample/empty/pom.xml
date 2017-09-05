@@ -36,7 +36,7 @@
                 <artifactId>maven-invoker-plugin</artifactId>
                 <configuration>
                     <streamLogs>true</streamLogs>
-                    <projectsDirectory>${basedir}</projectsDirectory>                    
+                    <projectsDirectory>${basedir}</projectsDirectory>
                     <pomIncludes>
                         <pomInclude>*/pom.xml</pomInclude>
                     </pomIncludes>
@@ -67,8 +67,8 @@
                             </goals>
                         </configuration>
                     </execution>
-                </executions> 
-            </plugin>            
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.andromda.maven.plugins</groupId>
                 <artifactId>andromdapp-maven-plugin</artifactId>
@@ -94,12 +94,12 @@
                         <configuration>
                             <configurationUri>${project.basedir}/conf/andromdapp/nabla/configuration.xml</configurationUri>
                         </configuration>
-                    </execution>                   
+                    </execution>
                 </executions>
             </plugin>
-        </plugins>	
+        </plugins>
     </build>
-    
+
     <!--
     <properties>
         <andromda.version>3.4-SNAPSHOT</andromda.version>

@@ -60,7 +60,7 @@ public class Person extends PersonEmbeddable implements Serializable, Comparable
 
     /**
      * Constructor with all POJO attribute values and CMR relations.
-     * 
+     *
      * @param name Value for the name property
      * @param birthDate Value for the birthDate property
      * @param serial Value for the serial property

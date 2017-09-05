@@ -11,7 +11,7 @@ public class AdminCheckerInterceptor
 {
     /**
      * Default interceptor execution method
-     * 
+     *
      * @param ctx the invocation context
      * @return
      */

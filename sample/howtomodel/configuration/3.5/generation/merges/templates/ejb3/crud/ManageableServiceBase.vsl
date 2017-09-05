@@ -157,7 +157,7 @@ public final class $manageable.manageableServiceBaseName
 
 #end
 #if ($manageable.read)
- 
+
      /**
      * Entity read operation
      *
@@ -175,7 +175,7 @@ public final class $manageable.manageableServiceBaseName
             throw new ${manageable.fullyQualifiedManageableServiceReadExceptionName}(ex);
         }
     }
-       
+
     /**
      * Read operation
      *
