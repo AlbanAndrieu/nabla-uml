@@ -33,7 +33,7 @@ import javax.persistence.UniqueConstraint;
 // @org.hibernate.annotations.Cache(usage = org.hibernate.annotations.CacheConcurrencyStrategy.TRANSACTIONAL)
 @NamedQueries
 ({
-    @NamedQuery(name = "Person.findAll", query = "SELECT p from Person as p"), 
+    @NamedQuery(name = "Person.findAll", query = "SELECT p from Person as p"),
     @NamedQuery(name = "Person.findByName", query = "SELECT p from Person as p WHERE p.name = :name")
 })
 public class Person extends PersonEmbeddable implements Serializable, Comparable<Person>
