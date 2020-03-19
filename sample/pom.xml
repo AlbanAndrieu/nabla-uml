@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<artifactId>uml</artifactId>
 		<groupId>com.nabla.project</groupId>
+		<artifactId>uml</artifactId>
 		<version>1.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.nabla.project.uml.sample</groupId>

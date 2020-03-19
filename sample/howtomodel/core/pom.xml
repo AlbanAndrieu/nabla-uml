@@ -1,5 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.andromda.test</groupId>
@@ -48,7 +48,7 @@
 			<groupId>jboss</groupId>
 			<artifactId>jboss-j2ee</artifactId>
 		</dependency>
-        <!--dependency>
+		<!--dependency>
             <groupId>jboss</groupId>
             <artifactId>jboss-ejb3-client</artifactId>
         </dependency-->
@@ -63,19 +63,19 @@
 			<version>${hibernate.annotations.version}</version>
 		</dependency>
 		-->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-entitymanager</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-validator</artifactId>
-        </dependency>
-        <!--dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+		</dependency>
+		<!--dependency>
             <groupId>hibernate-entitymanager</groupId>
             <artifactId>ejb3-persistence</artifactId>
         </dependency>
@@ -97,37 +97,21 @@
             <version>3.3.2.GA</version>
             <scope>test</scope>
         </dependency-->
-        <!--dependency>
+		<!--dependency>
             <groupId>jboss</groupId>
             <artifactId>ejb3-persistence</artifactId>
         </dependency-->
-        <dependency>
-                <groupId>javax.validation</groupId>
-                <artifactId>validation-api</artifactId>
-        </dependency>
-        <dependency>
-                <groupId>jboss</groupId>
-		<artifactId>jboss-annotations-ejb3</artifactId>
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>jboss</groupId>
-			<artifactId>jboss-remoting</artifactId>
-			<scope>provided</scope>
+			<artifactId>jboss-annotations-ejb3</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>jboss</groupId>
 			<artifactId>jboss-aop-jdk50-client</artifactId>
-		</dependency>
-        <!--dependency>
-            <groupId>jboss</groupId>
-            <artifactId>jboss-aspect-jdk50-client</artifactId>
-            <scope>provided</scope>
-        </dependency-->
-		<dependency>
-			<groupId>org.jboss</groupId>
-			<artifactId>jbossws-client</artifactId>
-			<version>${jbossws.client.version}</version>
-			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.jboss.microcontainer</groupId>
@@ -149,7 +133,7 @@
 			<groupId>org.jboss.microcontainer</groupId>
 			<artifactId>jcainflow</artifactId>
 		</dependency>
-        <!--dependency>
+		<!--dependency>
             <groupId>javax.persistence</groupId>
             <artifactId>persistence-api</artifactId>
             <version>1.0</version>
@@ -168,7 +152,7 @@
             <scope>test</scope>
         </dependency-->
 
-                <!--
+		<!--
       		<dependency>
       		  <groupId>jboss.jbossws14</groupId>
       		  <artifactId>jbossws14-client</artifactId>
@@ -176,7 +160,7 @@
       		</dependency>
       		-->
 
-      		<!--
+		<!--
 		<dependency>
 			<groupId>org.jboss.ws.native</groupId>
 			<artifactId>jbossws-native-client</artifactId>
@@ -200,17 +184,33 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>jboss</groupId>
+			<artifactId>jboss-remoting</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<!--dependency>
+            <groupId>jboss</groupId>
+            <artifactId>jboss-aspect-jdk50-client</artifactId>
+            <scope>provided</scope>
+        </dependency-->
+		<dependency>
+			<groupId>org.jboss</groupId>
+			<artifactId>jbossws-client</artifactId>
+			<version>${jbossws.client.version}</version>
+			<scope>provided</scope>
+		</dependency>
 		<!--
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 		-->
-        	<dependency>
-        	    <groupId>commons-io</groupId>
-        	    <artifactId>commons-io</artifactId>
-        	    <scope>test</scope>
-        	</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>

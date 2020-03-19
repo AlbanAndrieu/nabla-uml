@@ -1,5 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.andromda.test</groupId>
@@ -11,19 +11,6 @@
 	<name>AndroMDA HowToModel Sample Web</name>
 	<dependencies>
 		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>common</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>core</artifactId>
-			<version>${project.version}</version>
-			<type>ejb</type>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
 			<groupId>commons-logging</groupId>
 			<artifactId>commons-logging</artifactId>
 		</dependency>
@@ -34,21 +21,6 @@
 		<dependency>
 			<groupId>commons-codec</groupId>
 			<artifactId>commons-codec</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>commons-lang</groupId>
-			<artifactId>commons-lang</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>commons-beanutils</groupId>
-			<artifactId>commons-beanutils</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>commons-collections</groupId>
-			<artifactId>commons-collections</artifactId>
-			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>commons-digester</groupId>
@@ -82,7 +54,7 @@
 			<groupId>org.apache.myfaces.tomahawk</groupId>
 			<artifactId>tomahawk</artifactId>
 			<version>${org.apache.myfaces.tomahawk.version}</version>
-            <!--version>unknown</version>
+			<!--version>unknown</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/target/src/WEB-INF/lib/tomahawk.jar</systemPath-->
 		</dependency>
@@ -90,7 +62,7 @@
 			<groupId>org.apache.myfaces.trinidad</groupId>
 			<artifactId>trinidad-api</artifactId>
 			<version>${org.apache.myfaces.trinidad.version}</version>
-            <!--version>unknown</version>
+			<!--version>unknown</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/target/src/WEB-INF/lib/trinidad-api-1.0.1-incubating-SNAPSHOT.jar</systemPath-->
 		</dependency>
@@ -98,11 +70,11 @@
 			<groupId>org.apache.myfaces.trinidad</groupId>
 			<artifactId>trinidad-impl</artifactId>
 			<version>${org.apache.myfaces.trinidad.version}</version>
-            <!--version>unknown</version>
+			<!--version>unknown</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/target/src/WEB-INF/lib/trinidad-impl-1.0.1-incubating-SNAPSHOT.jar</systemPath-->
 		</dependency>
-        <!--
+		<!--
         <dependency>
             <groupId>org.cyberneko</groupId>
             <artifactId>nekohtml</artifactId>
@@ -111,11 +83,11 @@
             <systemPath>${project.basedir}/target/src/WEB-INF/lib/nekohtml.jar</systemPath>
         </dependency>
         -->
-        <dependency>
-            <groupId>net.java.dev.ajax4jsf</groupId>
-            <artifactId>ajax4jsf</artifactId>
-            <version>${ajax4jsf.version}</version>
-            <!--
+		<dependency>
+			<groupId>net.java.dev.ajax4jsf</groupId>
+			<artifactId>ajax4jsf</artifactId>
+			<version>${ajax4jsf.version}</version>
+			<!--
             <groupId>net.java.dev.ajax4jsf</groupId>
             <artifactId>ajax4jsf</artifactId>
             <version>1.0.6</version>
@@ -144,18 +116,8 @@
 			<artifactId>myfaces-extval-trinidad-support</artifactId>
 		</dependency>
 		<dependency>
-			<artifactId>hibernate-validator</artifactId>
 			<groupId>org.hibernate</groupId>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-			<scope>provided</scope>
+			<artifactId>hibernate-validator</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>javax.portlet</groupId>
@@ -190,15 +152,10 @@
 			<artifactId>jstl</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.andromda</groupId>
-			<artifactId>andromda-script-wrappers</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
 			<groupId>jboss</groupId>
 			<artifactId>jboss-j2ee</artifactId>
 		</dependency>
-        <!--dependency>
+		<!--dependency>
             <groupId>jboss</groupId>
             <artifactId>jboss-ejb3-client</artifactId>
         </dependency-->
@@ -209,32 +166,75 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
-                <!--
+			<!--
                 <groupId>hibernate-entitymanager</groupId>
                 <artifactId>ejb3-persistence</artifactId>
                 -->
 		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>common</artifactId>
+			<version>${project.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>core</artifactId>
+			<version>${project.version}</version>
+			<type>ejb</type>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.andromda</groupId>
+			<artifactId>andromda-script-wrappers</artifactId>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 	<build>
-        	<resources>
-        	    <resource>
-        	        <directory>src/main/resources</directory>
-        	        <targetPath>${project.basedir}/${target.dir}/src/main/webapp</targetPath>
-        	        <filtering>true</filtering>
-        	    </resource>
-		        <resource>
-        	        <directory>${maven.build.generated}/main/webapp</directory>
-        	        <targetPath>${project.basedir}/${target.dir}/src/main/webapp</targetPath>
-        	        <filtering>false</filtering>
-        	    </resource>
-        	    <resource>
-        	        <directory>src/main/webapp</directory>
-        	        <targetPath>${project.basedir}/${target.dir}/src/main/webapp</targetPath>
-        	        <filtering>false</filtering>
-        	    </resource>
-        	</resources>
+		<resources>
+			<resource>
+				<targetPath>${project.basedir}/${target.dir}/src/main/webapp</targetPath>
+				<filtering>true</filtering>
+				<directory>src/main/resources</directory>
+			</resource>
+			<resource>
+				<targetPath>${project.basedir}/${target.dir}/src/main/webapp</targetPath>
+				<filtering>false</filtering>
+				<directory>${maven.build.generated}/main/webapp</directory>
+			</resource>
+			<resource>
+				<targetPath>${project.basedir}/${target.dir}/src/main/webapp</targetPath>
+				<filtering>false</filtering>
+				<directory>src/main/webapp</directory>
+			</resource>
+		</resources>
 		<plugins>
-		        <!--
+			<!--
 			<plugin>
 				<artifactId>maven-antrun-plugin</artifactId>
 				<executions>
